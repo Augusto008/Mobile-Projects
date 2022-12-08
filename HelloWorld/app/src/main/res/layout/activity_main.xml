@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/HelloWorld"
         android:layout_centerInParent="true"
-        android:text="@+id/title"/>
+        android:text="@string/title"/>
 
     <TextView
         android:layout_width="wrap_content"
