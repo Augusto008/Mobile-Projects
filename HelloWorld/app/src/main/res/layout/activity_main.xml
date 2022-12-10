@@ -10,36 +10,24 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/MainToolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/MainTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/main_page_title"
                 android:textColor="@color/white"
                 android:textSize="32sp" />
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:id="@+id/HelloWorld"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/welcome"
-        android:textAlignment="center" />
-
-    <Button
-        android:id="@+id/startBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
-        android:text="@string/start" />
+    <include layout="@layout/activity_content_main"/>
 
 </RelativeLayout>
